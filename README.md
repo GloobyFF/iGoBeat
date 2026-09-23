@@ -4,7 +4,7 @@ Public overseas mirror for iGoBeat. Contains song catalog, covers, announcements
 
 Catalog base: `https://raw.githubusercontent.com/GloobyFF/iGoBeat/main/`
 
-485 songs: Pro / HD / 2+3. VIP access is verified by the app; public URLs are not DRM.
+585 songs: Pro / HD / 2+3. VIP access is verified by the app; public URLs are not DRM.
 
 ## Updates
 
