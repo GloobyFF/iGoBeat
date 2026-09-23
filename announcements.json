@@ -1,0 +1,34 @@
+{
+  "announcements": [
+    {
+      "id": "welcome-download-library",
+      "title": "欢迎来到 iGoBeat 下载中心",
+      "body": "歌曲现已改为按需下载。选择喜欢的曲包，下载完成后即可离线游玩。\n我们会在这里发布新曲上架、节日祝福和优惠活动信息。",
+      "priority": 10,
+      "enabled": true,
+      "translations": {
+        "en": {
+          "title": "Welcome to iGoBeat Downloads",
+          "body": "Songs are now available on demand. Download your favorites and play offline.\nNew songs, holiday greetings and special offers will appear here."
+        },
+        "zh-Hans": {
+          "title": "欢迎来到 iGoBeat 下载中心",
+          "body": "歌曲现已改为按需下载。选择喜欢的曲包，下载完成后即可离线游玩。\n我们会在这里发布新曲上架、节日祝福和优惠活动信息。"
+        },
+        "zh-Hant": {
+          "title": "歡迎來到 iGoBeat 下載中心",
+          "body": "歌曲現已改為隨選下載。選擇喜歡的曲包，下載完成後即可離線遊玩。\n我們會在這裡發布新曲上架、節日祝福和優惠活動資訊。"
+        },
+        "ja": {
+          "title": "iGoBeat ダウンロードセンターへようこそ",
+          "body": "好きな楽曲をダウンロードして、オフラインでも遊べます。\n新曲や季節のご挨拶、キャンペーン情報をお届けします。"
+        },
+        "ko": {
+          "title": "iGoBeat 다운로드 센터에 오신 것을 환영합니다",
+          "body": "좋아하는 곡을 다운로드하고 오프라인에서도 플레이하세요.\n신곡, 명절 인사와 할인 행사 소식을 이곳에서 전해 드립니다."
+        }
+      },
+      "imagePath": "images/0de3371b4999685b8e22.png"
+    }
+  ]
+}
