@@ -2,33 +2,33 @@
   "announcements": [
     {
       "id": "welcome-download-library",
-      "title": "欢迎来到 iGoBeat 下载中心",
-      "body": "歌曲现已改为按需下载。选择喜欢的曲包，下载完成后即可离线游玩。\n我们会在这里发布新曲上架、节日祝福和优惠活动信息。",
+      "title": "欢迎来到全新的 iGoBeat！",
+      "body": "感谢大家多年来的陪伴与支持！很高兴再次与你相遇，一起在熟悉的旋律中，开启全新的节奏之旅。\n\n如果你在游玩中遇到问题、想提出建议，或希望获取最新的制谱工具，欢迎联系我们：\n\nQQ群：65412321\n邮箱：iGoBeat@gmail.com\n\n期待听到你的声音，也期待玩到你亲手制作的谱面！",
       "priority": 10,
       "enabled": true,
       "translations": {
-        "en": {
-          "title": "Welcome to iGoBeat Downloads",
-          "body": "Songs are now available on demand. Download your favorites and play offline.\nNew songs, holiday greetings and special offers will appear here."
-        },
         "zh-Hans": {
-          "title": "欢迎来到 iGoBeat 下载中心",
-          "body": "歌曲现已改为按需下载。选择喜欢的曲包，下载完成后即可离线游玩。\n我们会在这里发布新曲上架、节日祝福和优惠活动信息。"
+          "title": "欢迎来到全新的 iGoBeat！",
+          "body": "感谢大家多年来的陪伴与支持！很高兴再次与你相遇，一起在熟悉的旋律中，开启全新的节奏之旅。\n\n如果你在游玩中遇到问题、想提出建议，或希望获取最新的制谱工具，欢迎联系我们：\n\nQQ群：65412321\n邮箱：iGoBeat@gmail.com\n\n期待听到你的声音，也期待玩到你亲手制作的谱面！"
         },
         "zh-Hant": {
-          "title": "歡迎來到 iGoBeat 下載中心",
-          "body": "歌曲現已改為隨選下載。選擇喜歡的曲包，下載完成後即可離線遊玩。\n我們會在這裡發布新曲上架、節日祝福和優惠活動資訊。"
+          "title": "歡迎來到全新的 iGoBeat！",
+          "body": "感謝大家多年來的陪伴與支持！很高興再次與你相遇，一起在熟悉的旋律中，開啟全新的節奏之旅。\n\n如果你在遊玩時遇到問題、想提出建議，或希望取得最新的譜面製作工具，歡迎與我們聯絡：\n\nQQ 群組：65412321\n電子郵件：iGoBeat@gmail.com\n\n期待聽到你的聲音，也期待玩到你親手製作的譜面！"
+        },
+        "en": {
+          "title": "Welcome to the all-new iGoBeat!",
+          "body": "Thank you for being with us and supporting iGoBeat over the years! We're delighted to welcome you back for a new rhythm adventure with familiar melodies.\n\nIf you run into any problems, have suggestions, or would like the latest chart-making tools, please get in touch:\n\nQQ group: 65412321\nEmail: iGoBeat@gmail.com\n\nWe look forward to hearing from you—and playing the charts you create!"
         },
         "ja": {
-          "title": "iGoBeat ダウンロードセンターへようこそ",
-          "body": "好きな楽曲をダウンロードして、オフラインでも遊べます。\n新曲や季節のご挨拶、キャンペーン情報をお届けします。"
+          "title": "新しくなった iGoBeat へようこそ！",
+          "body": "長年にわたり iGoBeat を応援してくださり、ありがとうございます！また皆さんとお会いできてうれしいです。おなじみのメロディーとともに、新たなリズムの旅を始めましょう。\n\nプレイ中にお困りのことやご意見・ご要望がある方、最新の譜面制作ツールをご希望の方は、ぜひお問い合わせください。\n\nQQグループ：65412321\nメール：iGoBeat@gmail.com\n\n皆さんの声をお待ちしています。皆さんが作った譜面で遊べることも楽しみにしています！"
         },
         "ko": {
-          "title": "iGoBeat 다운로드 센터에 오신 것을 환영합니다",
-          "body": "좋아하는 곡을 다운로드하고 오프라인에서도 플레이하세요.\n신곡, 명절 인사와 할인 행사 소식을 이곳에서 전해 드립니다."
+          "title": "새로워진 iGoBeat에 오신 것을 환영합니다!",
+          "body": "오랜 시간 iGoBeat와 함께하며 응원해 주신 여러분께 감사드립니다! 다시 만나게 되어 반갑습니다. 익숙한 멜로디와 함께 새로운 리듬 여행을 시작해 보세요.\n\n플레이 중 문제가 생기거나 제안하고 싶은 점이 있다면, 또는 최신 채보 제작 도구를 받고 싶다면 언제든 연락해 주세요.\n\nQQ 그룹: 65412321\n이메일: iGoBeat@gmail.com\n\n여러분의 이야기를 기다리겠습니다. 여러분이 직접 만든 채보를 플레이할 날도 기대합니다!"
         }
       },
-      "imagePath": "images/0de3371b4999685b8e22.png"
+      "imagePath": "images/welcome-v1.png"
     }
   ]
 }
