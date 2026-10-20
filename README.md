@@ -1,11 +1,13 @@
 # iGoBeat song library
 
-Public overseas mirror for iGoBeat. No app source code or credentials.
+Public overseas mirror for iGoBeat. Contains song catalog, covers, announcements and versioned Release assets. No app source code or credentials.
 
 Catalog base: `https://raw.githubusercontent.com/GloobyFF/iGoBeat/main/`
 
 676 songs: Pro / HD / 2+3. VIP access is verified by the app; public URLs are not DRM.
 
-This full replacement contains only current catalog pages, covers and announcement images. Every package is uploaded to the current Release set and verified by SHA-256 before the catalog switches. Previous Releases are retired after anonymous full-download verification. Refresh the catalog to obtain current download URLs.
+## Updates
 
-Song UUIDs, revisions, classifications and VIP assignments follow the validated domestic catalog. Changing package content requires a new revision.
+The maintainer publishes a complete validated source catalog. New/changed music files receive immutable Release URLs. Unchanged files are reused. Covers use content hashes. A single git commit switches the catalog after all uploads have passed SHA-256 checks. Previous pages and Release assets remain available for in-flight downloads and rollback.
+
+To roll back metadata, revert the publication commit on `main` (do not force-push). Existing media need not be reuploaded. Use an explicit package revision increase for replacing audio/charts; preserve song UUIDs and VIP assignments.
