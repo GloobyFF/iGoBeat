@@ -2,6 +2,7 @@
 import concurrent.futures,hashlib,json,pathlib,time,urllib.request,urllib.parse,zipfile,tempfile,os
 repo=os.environ.get('GITHUB_REPOSITORY','GloobyFF/iGoBeat')
 base=f'https://raw.githubusercontent.com/{repo}/main/'
+expected=json.loads(pathlib.Path('catalog-all.json').read_text())
 start=time.monotonic()
 def get(url):
  for attempt in range(3):
@@ -16,6 +17,7 @@ while url:
  assert url not in seen;seen.add(url)
  p=json.loads(get(url));rows+=p['datas'];url=urllib.parse.urljoin(base,p['nextPage']) if p.get('nextPage') else None
 assert len({e['guid'] for e in rows})==len(rows)
+assert rows==expected,'Public catalog differs from the checked-out publication'
 def package(e):
  data=get(e['packagePath'])
  assert len(data)==e['bytes'] and hashlib.sha256(data).hexdigest()==e['sha256'],e['guid']
@@ -24,10 +26,12 @@ def package(e):
   assert z.testzip() is None
   cfg=json.loads(z.read(e['guid']+'/config'))
   assert cfg['guid']==e['guid'] and cfg['mode']==e['mode'] and bool(cfg.get('isVip'))==bool(e.get('vipOnly'))
+  assert cfg['revision']==e['revision'],'Package/catalog revision mismatch'
  return len(data)
 with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:total=sum(pool.map(package,rows))
 images={urllib.parse.urljoin(base,e['coverPath']) for e in rows if e.get('coverPath')}
 notices=json.loads(get(base+'announcements.json'))
+assert notices==json.loads(pathlib.Path('announcements.json').read_text())
 def walk(v):
  if isinstance(v,dict):
   for k,x in v.items():
@@ -38,6 +42,8 @@ def walk(v):
 walk(notices)
 def image(url):
  data=get(url);assert data.startswith(b'\x89PNG\r\n\x1a\n') or data.startswith(b'\xff\xd8\xff')
+ relative=urllib.parse.urlparse(url).path.split('/main/',1)[1]
+ assert data==pathlib.Path(relative).read_bytes(),'Public image differs from publication'
 with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:list(pool.map(image,images))
 assert all(e['packagePath'].startswith(f'https://github.com/{repo}/releases/download/') for e in rows)
 r={'runnerOS':os.environ.get('RUNNER_OS'),'runnerArchitecture':os.environ.get('RUNNER_ARCH'),'songs':len(rows),'vip':sum(e.get('vipOnly',False) for e in rows),'anonymousFullPackages':len(rows),'packageBytes':total,'anonymousImages':len(images),'elapsedSeconds':round(time.monotonic()-start,2),'baseURL':base}

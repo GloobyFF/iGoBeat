@@ -1,11 +1,11 @@
 # iGoBeat song library
 
-Public overseas library for iGoBeat, currently featuring three free songs:
+Public overseas mirror for iGoBeat. No app source code or credentials.
 
-- Canon for iGoBeat (Pro Ver.)
-- Radetzky March, Op. 228
-- La Chanson Pour Anna
+Catalog base: `https://raw.githubusercontent.com/GloobyFF/iGoBeat/main/`
 
-Catalog: https://raw.githubusercontent.com/GloobyFF/iGoBeat/main/config1.1.1
+676 songs: Pro / HD / 2+3. VIP access is verified by the app; public URLs are not DRM.
 
-Music packages are immutable Release assets with SHA-256 verification. Previous pages and assets remain available for existing downloads and rollback. No app source code or credentials are stored here.
+This full replacement contains only current catalog pages, covers and announcement images. Every package is uploaded to the current Release set and verified by SHA-256 before the catalog switches. Previous Releases are retired after anonymous full-download verification. Refresh the catalog to obtain current download URLs.
+
+Song UUIDs, revisions, classifications and VIP assignments follow the validated domestic catalog. Changing package content requires a new revision.
